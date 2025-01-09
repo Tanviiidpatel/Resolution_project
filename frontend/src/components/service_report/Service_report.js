@@ -62,7 +62,7 @@ function Service_report() {
     
         try {
             // Send the form data to your backend via POST request
-            const response = await axios.post('http://localhost:5000/submit', formData);
+            const response = await axios.post('https://resolutionproject-git-main-tanvi-patels-projects.vercel.app/submit', formData);
             
             // Handle successful submission
             console.log('Form Data submitted successfully:', response.data);
