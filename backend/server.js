@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Environment Variables
 const MONGO_URI = process.env.MONGO_URI;
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT ;
 
 if (!MONGO_URI) {
   console.error("Error: MONGO_URI is undefined. Check your .env file.");
@@ -49,5 +49,6 @@ app.get("/", (req, res) => {
 
 // Start Server
 app.listen(PORT, () => {
+  
   console.log(`Server running on port ${PORT}`);
 });
