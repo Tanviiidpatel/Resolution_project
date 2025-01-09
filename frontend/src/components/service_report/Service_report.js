@@ -66,7 +66,7 @@ function Service_report() {
             
             // Handle successful submission
             console.log('Form Data submitted successfully:', response.data);
-            alert('Form submitted successfully!');  // Optionally show an alert or success message
+            alert('Form submitted successfully!');  
         } catch (error) {
             // Handle error in submission
             console.error('Error submitting form data:', error);
